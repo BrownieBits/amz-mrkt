@@ -4,8 +4,8 @@ import styles from './layout.module.scss';
 import utilStyles from '../styles/utils.module.scss';
 import Link from 'next/link';
 
-const name = 'Your Name';
-export const siteTitle = 'Next.js Sample Website';
+const name = 'Ian Brown';
+export const siteTitle = 'Amaze Market';
 
 export default function Layout({ children, home }) {
   return (
@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="The Amaze Marketplace"
         />
         <meta
           property="og:image"
