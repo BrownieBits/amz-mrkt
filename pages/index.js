@@ -4,6 +4,8 @@ import utilStyles from '../styles/utils.module.scss';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
+import { useTheme } from 'next-themes'
+import { useState, useEffect } from 'react'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -15,11 +17,27 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme } = useTheme()
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
+  
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <div>
+        The current theme is: {theme}
+        <button onClick={() => setTheme('light')}>Light Mode</button>
+        <button onClick={() => setTheme('dark')}>Dark Mode</button>
+      </div>
       <section className={utilStyles.headingMd}>
         <p>[Your Self Introduction]</p>
         <p>

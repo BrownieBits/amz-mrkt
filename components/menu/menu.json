@@ -1,0 +1,83 @@
+{
+    "sections": [
+        {
+            "section": "Main",
+            "items": [
+                {
+                    "title": "Home",
+                    "icon": "house",
+                    "url": "/"
+                },
+                {
+                    "title": "Subscriptions",
+                    "icon": "user-check",
+                    "url": "/posts/first-post"
+                },
+                {
+                    "title": "Like Items",
+                    "icon": "thumbs-up",
+                    "url": "/posts/first-post"
+                },
+                {
+                    "title": "Your Products",
+                    "icon": "shirt",
+                    "url": "/posts/first-post"
+                }
+            ]
+        },
+        {
+            "section": "Explore",
+            "items": [
+                {
+                    "title": "Trending",
+                    "icon": "house",
+                    "url": "/"
+                },
+                {
+                    "title": "New",
+                    "icon": "user-check",
+                    "url": "/posts/first-post"
+                },
+                {
+                    "title": "Holiday",
+                    "icon": "thumbs-up",
+                    "url": "/posts/first-post"
+                },
+                {
+                    "title": "Staff Picks",
+                    "icon": "shirt",
+                    "url": "/posts/first-post"
+                }
+            ]
+        },
+        {
+            "section": "Footer",
+            "items": [
+                {
+                    "title": "About",
+                    "url": "/"
+                },
+                {
+                    "title": "Press",
+                    "url": "/posts/first-post"
+                },
+                {
+                    "title": "Blog",
+                    "url": "/posts/first-post"
+                },
+                {
+                    "title": "Contact Us",
+                    "url": "/posts/first-post"
+                },
+                {
+                    "title": "Terms of Service",
+                    "url": "/posts/first-post"
+                },
+                {
+                    "title": "Privacy Policy",
+                    "url": "/posts/first-post"
+                }
+            ]
+        }
+    ]
+}

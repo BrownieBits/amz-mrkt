@@ -13,14 +13,14 @@
   --fg: #0F0F0F;
   --fg2: #181818;
   --fg3: #272727;
-  --fg4: #272727;
+  --fg4: #303030;
 }
 
 [data-theme='dark'] {
   --bg: #0F0F0F;
   --bg2: #181818;
   --bg3: #272727;
-  --bg4: #272727;
+  --bg4: #303030;
   --primary: #4776EF;
   --primary2: #1954EB;
   --primary3: #0F328D;
@@ -55,4 +55,47 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+button {
+  display:flex;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 30px;
+  color:var(--primary);
+  border: 1px solid var(--primary);
+  background:none;
+  cursor:pointer;
+  &:hover{
+    color:var(--primary2);
+    border: 1px solid var(--primary2);
+  }
+  &:active:hover{
+    color:var(--primary3);
+    border: 1px solid var(--primary3);
+  }
+  svg {
+    padding-right:15px;
+  }
+  &.primary{
+    background: var(--primary);
+    color: #fff;
+    &:hover{
+      color: #fff;
+      background: var(--primary2);
+    }
+    &:active:hover{
+      color: #fff;
+      background: var(--primary3);
+    }
+  }
+  &.small{
+    font-size: 12px;
+    padding: 5px 15px;
+    svg {
+      padding-right:10px;
+    }
+  }
+  
 }
