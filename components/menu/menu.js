@@ -18,7 +18,7 @@ export default function Menu() {
                         <div className={styles.footerLinks}>
                             {value.items.map((item, index) => {
                             return <div>
-                                <p><Link href={item.url}>{item.title}</Link> {index !== value.items.length -1 && (<>&nbsp;&nbsp;|&nbsp;&nbsp;</>)}</p>
+                                <p><Link href={item.url}>{item.title}</Link> {index !== value.items.length -1 && (<>&nbsp;|&nbsp;</>)}</p>
                             </div>
                             })}
                         </div>

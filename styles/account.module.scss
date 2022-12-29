@@ -1,0 +1,41 @@
+.content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    svg {
+        fill:var(--fg2);
+    }
+    .form {
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        width:100%;
+        & > div {
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: column; 
+            width: 100%;
+            input {
+                margin-bottom:15px;
+                font-size:14px;
+                padding:15px;
+                border-radius: 5px;
+                border: 1px solid var(--bg3);
+                background: var(--bg2);
+                letter-spacing: .1em;
+                &:focus {
+                    outline: 1px solid var(--bg4);
+                }
+            }
+            
+        }
+        button {
+            margin-top: 15px ;
+        }
+    }
+    p{
+        font-size: 14px;
+    }
+}
+

@@ -6,7 +6,6 @@ import { useRouter } from 'next/router';
 
 export default function Header() {
     const {user, logOut} = useAuth();
-    console.log('HEADER USER', user)
     const router = useRouter();
     return (
         <header className={styles.header}>

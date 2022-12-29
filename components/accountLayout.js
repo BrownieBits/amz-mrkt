@@ -1,11 +1,9 @@
 import Head from 'next/head';
-import styles from './layout.module.scss';
-import Menu from './menu/menu';
-import Header from './header/header';
+import styles from './accountLayout.module.scss';
 
 export const siteTitle = 'Amaze Market';
 
-export default function Layout({ children, home }) {
+export default function AccountLayout({ children, home }) {
   return (
     <div className={styles.mainWrapper}>
       <Head>
@@ -24,9 +22,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
-      <Header/>
       <div className={styles.mainBox}>
-        <Menu/>
         <main className={styles.mainContent}>{children}</main>
       </div>
       
