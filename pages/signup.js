@@ -1,7 +1,6 @@
-import { FormGroup } from '@mui/material';
 import Head from 'next/head';
 import { useState, useEffect } from 'react'
-import {Button,Form} from 'react-bootstrap'
+import {Button,Form,FormGroup} from 'react-bootstrap'
 import { useAuth } from '../context/AuthContext';
 import { useRouter } from 'next/router';
 

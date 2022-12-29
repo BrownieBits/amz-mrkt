@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import styles from './header.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { useAuth } from '../../context/AuthContext';
 import { useRouter } from 'next/router';
 
@@ -27,14 +26,14 @@ export default function Header() {
             </div>
             <div className={styles.searchBox}>&nbsp;</div>
             <div className={styles.userBox}>
-                <div className={styles.userItem}><Link href='/'><FontAwesomeIcon icon={solid('cart-shopping')} /></Link></div>
+                <div className={styles.userItem}><Link href='/'><FontAwesomeIcon icon='fa-solid fa-cart-shopping' /></Link></div>
                 {user ? (
                     <div className={styles.userItem}><button className='small' onClick={() => {
                         logOut()
                         router.push('/signin')
-                    }}><FontAwesomeIcon icon={solid('user')} />{user.email}</button></div>
+                    }}><FontAwesomeIcon icon='fa-solid fa-user' />{user.email}</button></div>
                 ) : (
-                    <div className={styles.userItem}><Link href='/signin'><button className='small'><FontAwesomeIcon icon={solid('user')} />Sign In</button></Link></div>
+                    <div className={styles.userItem}><Link href='/signin'><button className='small'><FontAwesomeIcon icon='fa-solid fa-user' />Sign In</button></Link></div>
                 )}
             </div>
         </header>

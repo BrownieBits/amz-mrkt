@@ -1,7 +1,6 @@
-import { FormGroup } from '@mui/material';
 import Head from 'next/head';
 import { useState, useEffect } from 'react'
-import {Button,Form} from 'react-bootstrap'
+import {Button,Form, FormGroup} from 'react-bootstrap'
 import { useAuth } from '../context/AuthContext';
 import { useRouter } from 'next/router';
 
@@ -29,7 +28,7 @@ export default function SignIn() {
             <div>
                 <h1>Sign In</h1>
                 <Form onSubmit={handleSignIn}>
-                    <FormGroup>
+                    <FormGroup controlId="formBasicEmail">
                         <Form.Label>Email</Form.Label>
                         <Form.Control onChange={(e) => setData({
                             ...data,
@@ -41,7 +40,7 @@ export default function SignIn() {
                         placeholder="Email"
                         />
                     </FormGroup>
-                    <FormGroup>
+                    <FormGroup controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
                         <Form.Control onChange={(e) => setData({
                             ...data,
