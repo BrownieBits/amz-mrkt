@@ -27,6 +27,26 @@
         height:1px;
         width:100%;
     }
+    .footerLinks {
+        padding: 0 15px;
+        display:flex;
+        flex-wrap: wrap;
+        p {
+            font-size:12px;
+            margin:0;
+            margin-bottom:10px;
+            padding:0;
+            a {
+                color:var(--fg2);
+                &:hover{
+                    color:var(--fg3);
+                }
+                &:active:hover{
+                    color:var(--fg4);
+                }
+            }
+        }
+    }
 }
     
     

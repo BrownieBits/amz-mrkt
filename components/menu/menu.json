@@ -5,22 +5,22 @@
             "items": [
                 {
                     "title": "Home",
-                    "icon": "house",
+                    "icon": "fa-house",
                     "url": "/"
                 },
                 {
                     "title": "Subscriptions",
-                    "icon": "user-check",
+                    "icon": "fa-user-check",
                     "url": "/posts/first-post"
                 },
                 {
                     "title": "Like Items",
-                    "icon": "thumbs-up",
+                    "icon": "fa-thumbs-up",
                     "url": "/posts/first-post"
                 },
                 {
                     "title": "Your Products",
-                    "icon": "shirt",
+                    "icon": "fa-shirt",
                     "url": "/posts/first-post"
                 }
             ]
@@ -30,22 +30,67 @@
             "items": [
                 {
                     "title": "Trending",
-                    "icon": "house",
+                    "icon": "fa-fire",
                     "url": "/"
                 },
                 {
                     "title": "New",
-                    "icon": "user-check",
+                    "icon": "fa-explosion",
                     "url": "/posts/first-post"
                 },
                 {
                     "title": "Holiday",
-                    "icon": "thumbs-up",
+                    "icon": "fa-candy-cane",
                     "url": "/posts/first-post"
                 },
                 {
                     "title": "Staff Picks",
-                    "icon": "shirt",
+                    "icon": "fa-heart",
+                    "url": "/posts/first-post"
+                },
+                {
+                    "title": "Pop Culture",
+                    "icon": "fa-ticket",
+                    "url": "/posts/first-post"
+                },
+                {
+                    "title": "T-Shirts",
+                    "icon": "fa-shirt",
+                    "url": "/posts/first-post"
+                },
+                {
+                    "title": "Outerwear",
+                    "icon": "fa-hat-cowboy",
+                    "url": "/posts/first-post"
+                },
+                {
+                    "title": "Accessories",
+                    "icon": "fa-mug-saucer",
+                    "url": "/posts/first-post"
+                },
+                {
+                    "title": "Home Goods",
+                    "icon": "fa-couch",
+                    "url": "/posts/first-post"
+                }
+            ]
+        },
+        {
+            "section": "Help",
+            "items": [
+                {
+                    "title": "Settings",
+                    "icon": "fa-gear",
+                    "url": "/"
+                },
+                {
+                    "title": "Help",
+                    "icon": "fa-circle-question",
+                    "url": "/posts/first-post"
+                },
+                {
+                    "title": "Send Feedback",
+                    "icon": "fa-message",
                     "url": "/posts/first-post"
                 }
             ]

@@ -2,8 +2,13 @@ import Link from 'next/link';
 import styles from './header.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { useAuth } from '../../context/AuthContext';
+import { useRouter } from 'next/router';
 
 export default function Header() {
+    const {user, logOut} = useAuth();
+    console.log('HEADER USER', user)
+    const router = useRouter();
     return (
         <header className={styles.header}>
             <div className={styles.imageBox}>
@@ -23,7 +28,14 @@ export default function Header() {
             <div className={styles.searchBox}>&nbsp;</div>
             <div className={styles.userBox}>
                 <div className={styles.userItem}><Link href='/'><FontAwesomeIcon icon={solid('cart-shopping')} /></Link></div>
-                <div className={styles.userItem}><Link href='/'><button className='small'><FontAwesomeIcon icon={solid('user')} />Sign In</button></Link></div>
+                {user ? (
+                    <div className={styles.userItem}><button className='small' onClick={() => {
+                        logOut()
+                        router.push('/signin')
+                    }}><FontAwesomeIcon icon={solid('user')} />{user.email}</button></div>
+                ) : (
+                    <div className={styles.userItem}><Link href='/signin'><button className='small'><FontAwesomeIcon icon={solid('user')} />Sign In</button></Link></div>
+                )}
             </div>
         </header>
     );

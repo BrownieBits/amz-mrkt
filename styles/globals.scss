@@ -50,6 +50,9 @@ a {
   &:hover{
     color: var(--primary2);
   }
+  &:active:hover{
+    color:var(--primary3);
+  }
 }
 
 img {
